@@ -1,4 +1,4 @@
-##Servidor de Correo con Poste.io
+## Servidor de Correo con Poste.io
 
 [Poste](https://poste.io/) es un servidor de correo que implementa todas las funcionalidades necesarias para tener un servidor de correos funcional en menos de 5 minutos.
 
@@ -20,4 +20,4 @@ Esperamos unos minutos y nuestro certificado ya será valido!
 
 Una vez hecho todo esto podemos empezar a crear los usuarios y a utilizar el servidor.
 
-Para enviar/ver bandeja de entrada de nuestro correo, está disponible un [rouncube](https://roundcube.net/) en mail.{TUDOMINIO.COM}
+Para enviar/ver bandeja de entrada de nuestro correo, está disponible un [rouncube](https://roundcube.net/) en https://mail.{TUDOMINIO.COM}
