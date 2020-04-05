@@ -1,0 +1,24 @@
+version: "2.3"
+services:
+  poste:
+    image: analogic/poste.io
+    restart: always
+    network_mode: "host"
+    container_name: poste
+    hostname: mail.{TUDOMINIO.COM}
+    domainname: {TUDOMINIO.COM}
+    expose:
+      - 25
+      - 80
+      - 443
+      - 110
+      - 143
+      - 465
+      - 587
+      - 993
+      - 995
+    environment:
+      - HTTPS=ON
+    volumes:
+      - ./data:/data
+      - /etc/localtime:/etc/localtime:ro
