@@ -9,7 +9,7 @@ Elegimos un directorio donde openvpn almacenará los certificados, y lo seteamos
 ```	
 Inicializamos los certificados necesarios de OpenVPN
 ```shell
-	docker run -v $OVPN_DATA:/etc/openvpn --rm lunderhage/openvpn-rpi ovpn_genconfig -u udp://arielordf.duckdns.org
+	docker run -v $OVPN_DATA:/etc/openvpn --rm lunderhage/openvpn-rpi ovpn_genconfig -u udp://{TUDOMINIO.COM}
 ```
 ```shell
 	docker run -v $OVPN_DATA:/etc/openvpn --rm -it lunderhage/openvpn-rpi ovpn_initpki
@@ -35,7 +35,7 @@ Para correr OpenVPN sobre docker en un server "normal" ejecutaríamos los siguie
 	OVPN_DATA=/mnt/hdd1/git/openvpn/ovpn-data
 ```	
 ```shell
-	docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_genconfig -u udp://arielordf.duckdns.org
+	docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_genconfig -u udp://{TUDOMINIO.COM}
 ```
 ```shell
 	docker run -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn ovpn_initpki
